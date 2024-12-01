@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Close Duplicate Tabs",
+    "version": "1.0",
+    "description": "A lightweight extension to close duplicate tabs in Firefox.",
+    "permissions": [
+        "tabs",
+        "storage",
+        "notifications"
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "action": {
+        "default_popup": "options.html",
+        "default_icon": "icon.png"
+    },
+    "icons": {
+        "48": "icon.png"
+    }
+}
